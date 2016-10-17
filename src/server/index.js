@@ -10,7 +10,7 @@ const DEFAULT_PORT = 8080
  *
  * @param {string} [host] - The host. The default host is "127.0.0.1".
  *
- * @returns {string} The host
+ * @returns {string} The host.
  */
 function getHost (host = DEFAULT_HOST) {
   return host
@@ -21,7 +21,7 @@ function getHost (host = DEFAULT_HOST) {
  *
  * @param {number} [port] - The port. If no port given, the default port is 8080.
  *
- * @returns {number}
+ * @returns {number} The free port.
  */
 async function getPort (port = DEFAULT_PORT) {
   return await freePort({ port: port })
