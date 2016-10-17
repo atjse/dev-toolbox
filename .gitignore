@@ -69,5 +69,5 @@ typings/
 # Serverless directories
 .serverless
 
-# Add IDE directories
+# IDE directories
 .idea
