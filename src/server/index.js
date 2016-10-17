@@ -2,6 +2,8 @@
 
 const freePort = require('get-port')
 
+const TempServer = require('./TempServer')
+
 const DEFAULT_HOST = '127.0.0.1'
 const DEFAULT_PORT = 8080
 
@@ -42,10 +44,34 @@ async function getUrl (host = DEFAULT_HOST, port = DEFAULT_PORT) {
   return `http://${host}:${port}`
 }
 
+/**
+ * Starts a temporary server for testing purposes.
+ *
+ * @param {*} [args] - If one arguments specified, that will be the (port).
+ *                     If two arguments, they will be the (host, port).
+ *
+ * @returns {Promise<any>}
+ */
+async function startTempServer (...args) {
+  let host = DEFAULT_HOST
+  let port = DEFAULT_PORT
+
+  if (args.length === 1) {
+    port = args[0]
+  } else if (args.length > 1) {
+    host = args[0]
+    port = args[1]
+  }
+
+  const server = new TempServer(host, port)
+  return server.start()
+}
+
 module.exports = {
   DEFAULT_HOST,
   DEFAULT_PORT,
   getHost,
   getPort,
-  getUrl
+  getUrl,
+  startTempServer
 }
