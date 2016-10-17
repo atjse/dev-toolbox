@@ -43,6 +43,8 @@ async function getUrl (host = DEFAULT_HOST, port = DEFAULT_PORT) {
 }
 
 module.exports = {
+  DEFAULT_HOST,
+  DEFAULT_PORT,
   getHost,
   getPort,
   getUrl
