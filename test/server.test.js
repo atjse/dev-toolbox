@@ -6,7 +6,7 @@ const source = require('../src')
 const server = source.server
 
 describe('server', () => {
-  describe('getHost', () => {
+  describe('getPort', () => {
     it('should return the default port (8080), when called without arguments', async () => {
       const port = await server.getPort()
 
