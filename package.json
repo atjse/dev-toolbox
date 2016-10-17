@@ -1,0 +1,29 @@
+{
+  "name": "dev-toolbox",
+  "version": "0.0.0",
+  "description": "The useful Node.js package development toolbox.",
+  "main": "index.js",
+  "author": "Richard Szakacs, richardszkcs@gmail.com, www.richardszkcs.com",
+  "homepage": "https://github.com/atjse/dev-toolbox#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atjse/dev-toolbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atjse/dev-toolbox/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dev",
+    "development",
+    "tools",
+    "toolbox",
+    "toolkit",
+    "utils",
+    "helpers",
+    "node",
+    "package"
+  ],
+  "scripts": {},
+  "devDependencies": {}
+}
