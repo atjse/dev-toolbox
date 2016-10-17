@@ -2,7 +2,7 @@
   "name": "dev-toolbox",
   "version": "0.0.0",
   "description": "The useful Node.js package development toolbox.",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Richard Szakacs, richardszkcs@gmail.com, www.richardszkcs.com",
   "homepage": "https://github.com/atjse/dev-toolbox#readme",
   "repository": {
@@ -24,6 +24,8 @@
     "node",
     "package"
   ],
-  "scripts": {},
+  "scripts": {
+    "test-ci": "echo 0"
+  },
   "devDependencies": {}
 }
