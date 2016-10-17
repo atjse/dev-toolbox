@@ -28,6 +28,7 @@
     "test-ci": "echo 0"
   },
   "devDependencies": {
-    "get-port": "^3.2.0"
+    "get-port": "^3.2.0",
+    "pkg-dir": "^2.0.0"
   }
 }
