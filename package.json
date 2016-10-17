@@ -27,5 +27,7 @@
   "scripts": {
     "test-ci": "echo 0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "get-port": "^3.2.0"
+  }
 }
