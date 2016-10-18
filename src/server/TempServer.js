@@ -16,9 +16,27 @@ class TempServer {
   }
 
   /**
+   * Returns the host.
+   *
+   * @returns {string} The host.
+   */
+  get host () {
+    return this._host
+  }
+
+  /**
+   * Returns the port.
+   *
+   * @returns {number} The port.
+   */
+  get port () {
+    return this._port
+  }
+
+  /**
    * Starts the temporary server.
    *
-   * @returns {Promise<any>}
+   * @returns {Promise<TempServer>}
    */
   async start () {
     this._server = connect()
@@ -33,7 +51,7 @@ class TempServer {
   /**
    * Stops the temporary server.
    *
-   * @returns {Promise<any>}
+   * @returns {Promise<TempServer>}
    */
   async stop () {
     return new Promise((resolve) => {

@@ -74,5 +74,34 @@ describe('server', () => {
     })
   })
 
-  describe('startTempServer', () => {})
+  describe('startTempServer', () => {
+    it('should start a temporary server with the default host and port, when called without arguments', async () => {
+      const tempServer = await server.startTempServer()
+
+      assert.strictEqual(tempServer.host, server.DEFAULT_HOST)
+      assert.strictEqual(tempServer.port, server.DEFAULT_PORT)
+
+      await tempServer.stop()
+    })
+
+    it('should start a temporary server with the default host and custom port, when called with 1 argument',
+      async () => {
+      const tempServer = await server.startTempServer(8090)
+
+      assert.strictEqual(tempServer.host, server.DEFAULT_HOST)
+      assert.strictEqual(tempServer.port, 8090)
+
+      await tempServer.stop()
+    })
+
+    it('should start a temporary server with custom host and port, when called with 2 arguments',
+      async () => {
+        const tempServer = await server.startTempServer('www.test.com', 9090)
+
+        assert.strictEqual(tempServer.host, 'www.test.com')
+        assert.strictEqual(tempServer.port, 9090)
+
+        await tempServer.stop()
+      })
+  })
 })
