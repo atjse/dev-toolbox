@@ -28,11 +28,15 @@
     "test": "mocha test/ --recursive",
     "test-ci": "npm run test"
   },
-  "devDependencies": {
-    "chai": "^4.1.2",
+  "dependencies": {
     "connect": "^3.6.6",
     "get-port": "^3.2.0",
-    "mocha": "^5.2.0",
     "pkg-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   }
 }
