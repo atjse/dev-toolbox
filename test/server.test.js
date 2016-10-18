@@ -51,4 +51,28 @@ describe('server', () => {
       await tempServer.stop()
     })
   })
+
+  describe('getUrl', () => {
+    it('should return the default url (http://127.0.0.1:8080), when called without arguments', async () => {
+      const url = await server.getUrl()
+
+      assert.strictEqual(url, 'http://127.0.0.1:8080')
+    })
+
+    it('should return the default url with the custom port (http://127.0.0.1:8090), when called with arguments',
+      async () => {
+      const url = await server.getUrl(server.DEFAULT_HOST, 8090)
+
+      assert.strictEqual(url, 'http://127.0.0.1:8090')
+    })
+
+    it('should return the custom url with the default port (http://www.test.com:8080), when called with arguments',
+      async () => {
+      const url = await server.getUrl('www.test.com')
+
+      assert.strictEqual(url, 'http://www.test.com:8080')
+    })
+  })
+
+  describe('startTempServer', () => {})
 })
