@@ -6,6 +6,20 @@ const source = require('../src')
 const server = source.server
 
 describe('server', () => {
+  describe('getHost', () => {
+    it('should return the default host (127.0.0.1), when called without arguments', () => {
+      const host = server.getHost()
+
+      assert.strictEqual(host, '127.0.0.1')
+    })
+
+    it('should return the given host, when called with custom host', () => {
+      const host = server.getHost('www.test.com')
+
+      assert.strictEqual(host, 'www.test.com')
+    })
+  })
+
   describe('getPort', () => {
     it('should return the default port (8080), when called without arguments', async () => {
       const port = await server.getPort()
