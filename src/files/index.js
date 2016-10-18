@@ -20,11 +20,12 @@ let rootPath = null
 /**
  * Returns a normalized path relative to the project's root directory.
  *
- * @param {string} path - The path to use to normalize.
+ * @param {string} [path] - The path to use to normalize.
+ *                          If none given, only the project's root directory will be used.
  *
  * @returns {string} The normalized path relative to the project's root directory.
  */
-function root (path) {
+function root (path = '') {
   if (rootPath === null) {
     rootPath = packageDir.sync(__dirname)
   }
