@@ -1,0 +1,17 @@
+reporting:
+    print: summary
+    reports:
+        - lcov
+    dir: ./coverage
+    watermarks:
+        statements: [99.99999, 100]
+        lines: [99.99999, 100]
+        functions: [99.99999, 100]
+        branches: [99.99999, 100]
+
+check:
+    global:
+        statements: 100
+        lines: 100
+        branches: 100
+        functions: 100
