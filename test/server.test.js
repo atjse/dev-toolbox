@@ -94,8 +94,7 @@ describe('server', () => {
       await tempServer.stop()
     })
 
-    it('should start a temporary server with custom host and port, when called with 2 arguments',
-      async () => {
+    it('should start a temporary server with custom host and port, when called with 2 arguments', async () => {
         const tempServer = await server.startTempServer('www.test.com', 9090)
 
         assert.strictEqual(tempServer.host, 'www.test.com')
