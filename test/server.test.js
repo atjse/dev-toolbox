@@ -61,17 +61,17 @@ describe('server', () => {
 
     it('should return the default url with the custom port (http://127.0.0.1:8090), when called with arguments',
       async () => {
-      const url = await server.getUrl(server.DEFAULT_HOST, 8090)
+        const url = await server.getUrl(server.DEFAULT_HOST, 8090)
 
-      assert.strictEqual(url, 'http://127.0.0.1:8090')
-    })
+        assert.strictEqual(url, 'http://127.0.0.1:8090')
+      })
 
     it('should return the custom url with the default port (http://www.test.com:8080), when called with arguments',
       async () => {
-      const url = await server.getUrl('www.test.com')
+        const url = await server.getUrl('www.test.com')
 
-      assert.strictEqual(url, 'http://www.test.com:8080')
-    })
+        assert.strictEqual(url, 'http://www.test.com:8080')
+      })
   })
 
   describe('startTempServer', () => {
@@ -86,21 +86,21 @@ describe('server', () => {
 
     it('should start a temporary server with the default host and custom port, when called with 1 argument',
       async () => {
-      const tempServer = await server.startTempServer(8090)
+        const tempServer = await server.startTempServer(8090)
 
-      assert.strictEqual(tempServer.host, server.DEFAULT_HOST)
-      assert.strictEqual(tempServer.port, 8090)
-
-      await tempServer.stop()
-    })
-
-    it('should start a temporary server with custom host and port, when called with 2 arguments', async () => {
-        const tempServer = await server.startTempServer('www.test.com', 9090)
-
-        assert.strictEqual(tempServer.host, 'www.test.com')
-        assert.strictEqual(tempServer.port, 9090)
+        assert.strictEqual(tempServer.host, server.DEFAULT_HOST)
+        assert.strictEqual(tempServer.port, 8090)
 
         await tempServer.stop()
       })
+
+    it('should start a temporary server with custom host and port, when called with 2 arguments', async () => {
+      const tempServer = await server.startTempServer('www.test.com', 9090)
+
+      assert.strictEqual(tempServer.host, 'www.test.com')
+      assert.strictEqual(tempServer.port, 9090)
+
+      await tempServer.stop()
+    })
   })
 })

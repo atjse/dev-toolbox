@@ -26,7 +26,8 @@ function getHost (host = DEFAULT_HOST) {
  * @returns {number} The free port.
  */
 async function getPort (port = DEFAULT_PORT) {
-  return await freePort({ port: port })
+  const availablePort = await freePort({ port: port })
+  return availablePort
 }
 
 /**
