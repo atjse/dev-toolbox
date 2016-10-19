@@ -16,12 +16,16 @@
   "keywords": [
     "dev",
     "development",
+    "tool",
     "tools",
     "toolbox",
     "toolkit",
+    "util",
     "utils",
+    "helper",
     "helpers",
     "node",
+    "nodejs",
     "package"
   ],
   "scripts": {
