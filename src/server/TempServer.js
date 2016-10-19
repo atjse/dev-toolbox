@@ -40,6 +40,7 @@ class TempServer {
    */
   async start () {
     this._server = connect()
+    /* istanbul ignore next */
     this._server.use((req, res) => res.end(`Hello there at ${this._host}:${this._port}!\n`))
 
     return new Promise((resolve) => {
