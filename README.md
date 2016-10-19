@@ -1,18 +1,18 @@
-dev-toolbox
-===========
+🛠 dev-[toolbox] 🛠
+===================
 
-The **useful** Node.js package **development toolbox**.
+The **useful development toolbox** for Node.js packages.
 
 Installation
-============
+------------
 
 Usage
-=====
+-----
 
 Contribution
-============
+------------
 
 License
-=======
+-------
 
 [MIT](LICENSE.md) @ [Richard Szakacs](https://www.github.com/richardszkcs)
