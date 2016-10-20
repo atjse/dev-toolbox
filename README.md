@@ -23,6 +23,51 @@ yarn add dev-toolbox --dev
 Usage
 -----
 
+The [**server**](src/server/index.js) module:
+
+```javascript
+const toolbox = require('dev-toolbox')
+const server = toolbox.server
+
+// ...
+
+// get a free port
+const freePort = await server.getPort()
+
+// ...
+
+// start a temporary server
+const temp = await server.startTempServer()
+
+console.log('temp started', temp.host, temp.port)
+
+// stop the temporary server
+await temp.stop()
+```
+
+For more check out the [**docs**](doc/API.md), [**source**](src/server), and 
+[**tests**](test/server.test.js).
+
+---
+
+The [**files**](src/files/index.js) module:
+
+```javascript
+const toolbox = require('dev-toolbox')
+const files = toolbox.files
+
+// ...
+
+// get the normalized path
+files.path('/../src/')
+
+// get the normalized path relative to your project's root directory
+files.root('/src')
+```
+
+For more check out the [**docs**](doc/API.md), [**source**](src/files), and 
+[**tests**](test/files.test.js).
+
 Contribution
 ------------
 
