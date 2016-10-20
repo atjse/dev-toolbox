@@ -1,7 +1,6 @@
 'use strict'
 
 const freePort = require('get-port')
-
 const TempServer = require('./TempServer')
 
 const DEFAULT_HOST = '127.0.0.1'
@@ -48,10 +47,10 @@ async function getUrl (host = DEFAULT_HOST, port = DEFAULT_PORT) {
 /**
  * Starts a temporary server for testing purposes.
  *
- * @param {*} [args] - If one arguments specified, that will be the (port).
+ * @param {*} [args] - If one argument is specified, that will be the (port).
  *                     If two arguments, they will be the (host, port).
  *
- * @returns {Promise<any>}
+ * @returns {Promise<TempServer>}
  */
 async function startTempServer (...args) {
   let host = DEFAULT_HOST

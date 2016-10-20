@@ -1,7 +1,6 @@
 'use strict'
 
 const p = require('path')
-
 const packageDir = require('pkg-dir')
 
 /**
@@ -15,7 +14,11 @@ function path (path) {
   return p.normalize(path)
 }
 
-let rootPath = null
+/**
+ * @private
+ * @type {string|null}
+ */
+let _rootPath = null
 
 /**
  * Returns a normalized path relative to the project's root directory.
@@ -26,11 +29,11 @@ let rootPath = null
  * @returns {string} The normalized path relative to the project's root directory.
  */
 function root (path = '') {
-  if (rootPath === null) {
-    rootPath = packageDir.sync(__dirname)
+  if (_rootPath === null) {
+    _rootPath = packageDir.sync(__dirname)
   }
 
-  return p.normalize(`${rootPath}/${path}`)
+  return p.normalize(`${_rootPath}/${path}`)
 }
 
 module.exports = {
