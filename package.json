@@ -38,6 +38,11 @@
     "check": "standard --env mocha --verbose | snazzy",
     "fix": "standard --env mocha --fix",
     "test": "istanbul cover _mocha test --recursive",
+    "prepare": "npm run check && npm run doc && npm run test",
+    "release-major": "npm run prepare && npm run gulp -- bump.major && npm run gulp -- stamp && npm publish",
+    "release-minor": "npm run prepare && npm run gulp -- bump.minor && npm run gulp -- stamp && npm publish",
+    "release-patch": "npm run prepare && npm run gulp -- bump.patch && npm run gulp -- stamp && npm publish",
+    "release": "release-patch",
     "cover": "npm run check && npm run test && istanbul check-coverage",
     "report": "npm run test -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
@@ -57,6 +62,7 @@
     "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "semver": "^5.5.0",
+    "shelljs": "^0.8.2",
     "snazzy": "^7.1.1",
     "standard": "^11.0.1"
   }
