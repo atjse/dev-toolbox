@@ -1,0 +1,19 @@
+# Temporary files
+.cache
+.idea
+coverage
+
+# Tasks and automations directory
+task/
+
+# Tests directory
+test/
+
+# Development-related files
+.editorconfig
+.istanbul.yml
+.travis.yml
+
+# Development-related documents
+CONTRIBUTING.md
+DEVELOPMENT.md
