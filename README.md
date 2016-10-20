@@ -2,6 +2,7 @@
 ===================
 
 [![Travis CI - Build Status][travis-badge]][travis-url]
+[![Dependencies][dep-badge]][dep-url]
 [![Coveralls - Code Coverage Status][cov-badge]][cov-url]
 [![JavaScript Style Guide][jsstd-badge]][jsstd-url]
 [![PRs Welcome][pr-badge]][pr-url]
@@ -32,6 +33,9 @@ License
 
  [travis-badge]: https://travis-ci.org/atjse/dev-toolbox.svg?branch=master
  [travis-url]:   https://travis-ci.org/atjse/dev-toolbox
+
+ [dep-badge]:    https://david-dm.org/atjse/dev-toolbox/status.svg
+ [dep-url]:      https://david-dm.org/atjse/dev-toolbox
 
  [cov-badge]:    https://coveralls.io/repos/github/atjse/dev-toolbox/badge.svg?branch=master
  [cov-url]:      https://coveralls.io/github/atjse/dev-toolbox?branch=master
