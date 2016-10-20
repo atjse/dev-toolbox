@@ -61,4 +61,9 @@ class TempServer {
   }
 }
 
+/**
+ * The TempServer module.
+ *
+ * @module dev-toolbox/server/TempServer
+ */
 module.exports = TempServer

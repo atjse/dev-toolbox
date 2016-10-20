@@ -36,6 +36,11 @@ function root (path = '') {
   return p.normalize(`${_rootPath}/${path}`)
 }
 
+/**
+ * Files module.
+ *
+ * @module dev-toolbox/files
+ */
 module.exports = {
   path,
   root

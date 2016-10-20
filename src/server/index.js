@@ -67,6 +67,11 @@ async function startTempServer (...args) {
   return server.start()
 }
 
+/**
+ * Server module.
+ *
+ * @module dev-toolbox/server
+ */
 module.exports = {
   DEFAULT_HOST,
   DEFAULT_PORT,
