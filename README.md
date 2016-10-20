@@ -71,6 +71,11 @@ For more check out the [**docs**](doc/API.md), [**source**](src/files), and
 Contribution
 ------------
 
+**Any contribution is appreciated**. To get going, check out the 
+[**contribution guidelines**](CONTRIBUTING.md), then the 
+[**development manual**](DEVELOPMENT.md). 
+***Thank you, have fun!***
+
 License
 -------
 
