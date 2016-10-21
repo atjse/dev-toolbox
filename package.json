@@ -8,13 +8,13 @@
     "test": "test"
   },
   "author": "Richard Szakacs, richardszkcs@gmail.com, www.richardszkcs.com",
-  "homepage": "https://github.com/atjse/dev-toolbox#readme",
+  "homepage": "https://github.com/atjse/dtb#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atjse/dev-toolbox.git"
+    "url": "git+https://github.com/atjse/dtb.git"
   },
   "bugs": {
-    "url": "https://github.com/atjse/dev-toolbox/issues"
+    "url": "https://github.com/atjse/dtb/issues"
   },
   "license": "MIT",
   "keywords": [

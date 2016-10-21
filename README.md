@@ -14,10 +14,10 @@ Installation
 
 ```bash
 # Using NPM
-npm install dev-toolbox --save-dev
+npm install dtb --save-dev
 
 # Using Yarn
-yarn add dev-toolbox --dev
+yarn add dtb --dev
 ```
 
 Usage
@@ -26,7 +26,7 @@ Usage
 The [**server**](src/server/index.js) module:
 
 ```javascript
-const toolbox = require('dev-toolbox')
+const toolbox = require('dtb')
 const server = toolbox.server
 
 // ...
@@ -53,7 +53,7 @@ For more check out the [**docs**](doc/API.md), [**source**](src/server), and
 The [**files**](src/files/index.js) module:
 
 ```javascript
-const toolbox = require('dev-toolbox')
+const toolbox = require('dtb')
 const files = toolbox.files
 
 // ...
@@ -81,14 +81,14 @@ License
 
 [MIT](LICENSE.md) @ [Richard Szakacs](https://www.github.com/richardszkcs)
 
- [travis-badge]: https://travis-ci.org/atjse/dev-toolbox.svg?branch=master
- [travis-url]:   https://travis-ci.org/atjse/dev-toolbox
+ [travis-badge]: https://travis-ci.org/atjse/dtb.svg?branch=master
+ [travis-url]:   https://travis-ci.org/atjse/dtb
 
- [dep-badge]:    https://david-dm.org/atjse/dev-toolbox/status.svg
- [dep-url]:      https://david-dm.org/atjse/dev-toolbox
+ [dep-badge]:    https://david-dm.org/atjse/dtb/status.svg
+ [dep-url]:      https://david-dm.org/atjse/dtb
 
- [cov-badge]:    https://coveralls.io/repos/github/atjse/dev-toolbox/badge.svg?branch=master
- [cov-url]:      https://coveralls.io/github/atjse/dev-toolbox?branch=master
+ [cov-badge]:    https://coveralls.io/repos/github/atjse/dtb/badge.svg?branch=master
+ [cov-url]:      https://coveralls.io/github/atjse/dtb?branch=master
 
  [jsstd-badge]:  https://img.shields.io/badge/code_style-standard-brightgreen.svg
  [jsstd-url]:    https://standardjs.com
