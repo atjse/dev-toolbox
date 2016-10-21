@@ -42,7 +42,7 @@
     "release-major": "npm run prepare && npm run gulp -- bump.major && npm run gulp -- stamp && npm publish",
     "release-minor": "npm run prepare && npm run gulp -- bump.minor && npm run gulp -- stamp && npm publish",
     "release-patch": "npm run prepare && npm run gulp -- bump.patch && npm run gulp -- stamp && npm publish",
-    "release": "release-patch",
+    "release": "npm run release-patch",
     "cover": "npm run check && npm run test && istanbul check-coverage",
     "report": "npm run test -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
