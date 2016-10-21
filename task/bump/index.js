@@ -30,6 +30,6 @@ async function bump (type = 'patch') {
   await fs.writeFile(path.normalize(`${__dirname}/../../package.json`), JSON.stringify(pkg, null, 2))
 }
 
-gulp.task('bump.major', async () => await bump('major'))
-gulp.task('bump.minor', async () => await bump('minor'))
-gulp.task('bump.patch', async () => await bump('patch'))
+gulp.task('bump.major', async () => bump('major'))
+gulp.task('bump.minor', async () => bump('minor'))
+gulp.task('bump.patch', async () => bump('patch'))
