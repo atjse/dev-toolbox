@@ -1,6 +1,6 @@
 {
   "name": "dev-toolbox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The useful development toolbox for Node.js packages.",
   "main": "src/index.js",
   "directories": {
